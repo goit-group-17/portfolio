@@ -3,5 +3,13 @@
 ## Install
 
 ````
-git clone clone git@github.com:goit-group-17/portfolio.git
+git clone git@github.com:goit-group-17/portfolio.git
+````
+
+````
+npm install
+````
+
+````
+npm run dev
 ````
