@@ -5,12 +5,12 @@
   padding-top: 281px;
   padding-bottom: 32px;
 }
-h1 {
+.header-one {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-  font-size: 50px;
+
   line-height: 100%;
-  letter-spacing: -0.03em;
+
   text-transform: uppercase;
   color: #fafafa;
   margin-bottom: 212px;
@@ -87,9 +87,8 @@ h1 {
     padding: 18px 24px 18px 24px;
     font-size: 16px;
   }
-  h1 {
-    font-size: 90px;
-    margin-bottom: 200px;
+  .header-one {
+    margin-bottom: 187px;
   }
 }
 @media (min-resolution: 192dpi) and (min-width: 768px) {
@@ -102,7 +101,7 @@ h1 {
   .hero {
     background-image: url(../img/hero/bg-1desk-1x.png);
   }
-  h1 {
+  .header-one {
     width: 1084px;
     margin-bottom: 243px;
     margin-left: auto;
