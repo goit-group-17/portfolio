@@ -1,3 +1,18 @@
-.projects {
+
+.container .border-dev {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+
 }
 
+.section-projects {}
+
+.section-title {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
