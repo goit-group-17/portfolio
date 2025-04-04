@@ -62,4 +62,5 @@ export function renderError() {
 
 export function renderNotFound() {
   document.querySelector('.swiper').style.display = 'none';
+  document.querySelector('.not-found').style.display = 'block';
 }

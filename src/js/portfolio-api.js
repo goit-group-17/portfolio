@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = `https://portfolio-js.b.goit.study/api/reviewsd`;
+const URL = `https://portfolio-js.b.goit.study/api/reviews`;
 
 export async function fetchPortfolio() {
   return await axios
