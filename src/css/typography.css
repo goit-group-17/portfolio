@@ -70,7 +70,7 @@
   }
 }
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .header-one {
     font-size: 90px;
     letter-spacing: -2.7px
