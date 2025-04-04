@@ -77,9 +77,18 @@
 
 .section-reviews .wrapper-swiper-button {
   stroke: var(--icon-color-default);
+  fill: none;
 }
 
-.swiper-button.swiper-button-disabled {
+.section-reviews .swiper-button:not(.swiper-button-disabled):hover {
+  cursor: pointer;
+}
+
+.swiper-slide:last-child {
+  margin-right: 0 !important;
+}
+
+.swiper-button .swiper-button-disabled {
   border: 1px solid var(--border-color-light);
 }
 
