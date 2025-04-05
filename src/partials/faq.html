@@ -1,10 +1,10 @@
 <section class="section-faq">
-  <div class="container">
+  <div class="container faq-container">
     <h2 class="faq-tittle">FAQ</h2>
 
-    <ul class="faq-ac-wrap">
-      <li class="faq-ac-item">
-        <div class="faq-ac-header">
+    <ul class="faq-ac-wrap js-accordion">
+      <li class="faq-ac-item" data-accordion-item>
+        <div class="faq-ac-header" data-accordion-header>
           <h5 class="faq-ac-tittle">
             What programming languages ​​are most often used in your project?
           </h5>
@@ -14,7 +14,7 @@
             </svg>
           </button>
         </div>
-        <div class="faq-ac-panel">
+        <div class="faq-ac-panel" data-accordion-body>
           <p class="faq-ac-text">
             In the field of web development, there are various technologies and
             programming languages. Typically, this includes a combination of
@@ -23,7 +23,7 @@
         </div>
       </li>
 
-      <li class="faq-ac-item add-style">
+      <li class="faq-ac-item">
         <div class="faq-ac-header">
           <h5 class="faq-ac-tittle">What are the deadlines for the project?</h5>
           <button type="button" class="faq-ac-trigger">
@@ -79,7 +79,7 @@
         </div>
       </li>
 
-      <li class="faq-ac-item">
+      <li class="faq-ac-item add-style">
         <div class="faq-ac-header">
           <h5 class="faq-ac-tittle">Do you provide advice or support?</h5>
           <button type="button" class="faq-ac-trigger">
@@ -121,4 +121,6 @@
       </li>
     </ul>
   </div>
+
+  <script type="module" src="../faq-js/faq.js"></script>
 </section>
