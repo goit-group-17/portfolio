@@ -1,4 +1,4 @@
-import { fetchPortfolio } from './js/portfolio-api.js';
+import { fetchPortfolio } from './js/portfolio-api';
 import {
   renderGalleryMarkup,
   updateGallery,
