@@ -1,4 +1,8 @@
-
+.container {
+ max-width: 375px;
+ margin: 0 auto;
+padding: 0 16px;
+}
 .section-title {
 font-family: "Inter Tight", sans-serif;
  font-weight: 600;
@@ -77,15 +81,24 @@ cursor: pointer;
 text-align: center;
 align-items: center;
 white-space: nowrap;
+margin: 13px;
 
 }
 .content-title-image {
 border-radius: 0 0 24px 24px;
-width: 100%;
-object-fit: cover;
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
+margin: 100px 16px;
 
 }
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    padding: 40px;
+    background-color: #eee;
+    text-align: center;
+    font-size: 24px;
+}
+
+
