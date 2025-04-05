@@ -1,0 +1,55 @@
+<section class="work-together">
+  <div class="container work-together__container">
+    <div class="work-together__header">
+      <img
+        src="../img/hero/Jefferson.jpg"
+        alt="avatar"
+        class="work-together__avatar"
+      />
+      <h2 class="work-together__title">LET’S <span>WORK</span> TOGETHER</h2>
+    </div>
+
+    <form class="work-together__form" id="contactForm">
+      <div class="form-fields">
+        <div class="form-group">
+          <input type="email" placeholder="clients@gmail.com" required />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="comments" required />
+        </div>
+      </div>
+      <button type="submit" class="send-btn">Send</button>
+    </form>
+
+    <div class="work-together__contacts">
+      <span class="contact-pill">lloydjefferson@gmail.com</span>
+      <span class="contact-pill">+380 11 111 11 11</span>
+    </div>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <button class="popup__close" onclick="hidePopup()">×</button>
+      <h3>Thank you for your interest in cooperation!</h3>
+      <p>
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. <br />
+        Please stay in touch.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const popup = document.getElementById('popup');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    popup.style.display = 'flex';
+  });
+
+  function hidePopup() {
+    popup.style.display = 'none';
+  }
+</script>
