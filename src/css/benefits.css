@@ -116,5 +116,25 @@
     margin-top: 64px;
 }
 }
-
+@media screen and (min-width: 1440px) {
+    .benefits {
+            padding: 164px 0;
+        }
+    .container.benefits-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+         .benefits-left {
+             width: 50%;  
+         }
+    
+         .benefits-right {
+             width: 50%;
+        }
+         .benefit-item {
+        width: 332px;
+         }
+}
 
