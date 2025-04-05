@@ -9,7 +9,7 @@
         text-transform: uppercase;
 }
 
-/* Список переваг */
+
 .benefits-list {
     display: flex;
     flex-direction: column;
@@ -19,31 +19,25 @@
     
 }
 
-/* Окремий елемент */
+
 .benefit-item {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #242527;
+    border-radius: 20px;
+    padding: 24px;
     text-align: center;
+  
 }
 
-.benefit-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
 
-/* Іконки */
 .icon {
     font-size: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 64px;
 }
 .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 64px;
+
     width: 100%;
     height: 100%;
     background-color: #ed3b44;
@@ -53,46 +47,54 @@
         height: 48px;
 }
 
-/* Заголовки елементів */
 .benefit-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 10px;
+     margin-bottom: 8px;
+        color: #fafafa;
+        font-family: 'Inter Tight', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+
+        display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+              
 }
 
-/* Опис */
 .benefit-description {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
+     color:rgba(250, 250, 250, 0.6);
+        font-family: 'Inter Tight', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        text-align: start;
 }
 
-/* Кнопка "Order the project" */
+
 .order-project-btn {
-    display: inline-block;
-    margin-top: 40px;
+    display: block;
+    margin-top: 32px;
     padding: 18px 36px;
+    font-family: 'Inter Tight', sans-serif;
+    letter-spacing: -0.02em;
     font-size: 16px;
-    font-weight: 600;
-    color: #fff;
+    font-weight: 500;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    color: #fafafa;
     text-decoration: none;
-    background-color: #ff4d00;
-    border-radius: 60px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0px 4px 10px rgba(255, 77, 0, 0.3);
+      border-radius: 60px;
+    width: 189px;
 }
 
 .order-project-btn:hover {
-    background-color: #e64400;
-    transform: translateY(-2px);
-}
+    background-color: #242527;
+ }
 
 .order-project-btn:active {
-    background-color: #cc3d00;
-    transform: translateY(0);
-}
+    background-color: #242527;
+  }
 
-/* Адаптація для мобільних пристроїв */
+
 
 
