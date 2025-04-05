@@ -95,6 +95,26 @@
     background-color: #242527;
   }
 
+@media screen and (min-width: 768px) {
+        .benefits {
+                padding: 96px 0;
+            }
+    .benefits-list {
+    flex-direction: row;
+     flex-wrap: wrap;
+    
+    height: 100%;
+   
 
+        }
+ .benefit-item {
+    width: calc((100% - 24px) / 2);
+    box-sizing: border-box;
+    width: 344px;
+    }
+.order-project-btn {
+    margin-top: 64px;
+}
+}
 
 
