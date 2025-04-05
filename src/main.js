@@ -6,7 +6,10 @@ import {
   renderNotFound,
 } from './js/render-reviews.js';
 
+import InitAboutMe from './js/about-me';
 
+
+// Init portfolio
 (async () => {
   const response = await fetchPortfolio();
   try {
@@ -17,3 +20,6 @@ import {
     renderNotFound();
   }
 })();
+
+// Init accordions
+InitAboutMe();
