@@ -18,9 +18,10 @@
   margin-bottom: 32px;
 }
 
+/* === Avatar — Mobile default (до 768px) === */
 .work-together__avatar {
-  width: 56px;
-  height: 56px;
+  width: 44px;
+  height: 44px;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -122,15 +123,29 @@
   line-height: 1.6;
 }
 
+.popup__content h5 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.popup__content p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .popup__close {
   position: absolute;
   top: 8px;
   right: 12px;
-  background: transparent;
-  color: white;
-  font-size: 20px;
-  border: none;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/hero/cross.SVG.svg');
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
+  filter: brightness(0) invert(1);
 }
 
 /* === Tablet (≥768px) === */
@@ -178,6 +193,11 @@
     max-width: 500px;
     padding: 32px;
     font-size: 16px;
+  }
+
+  .work-together__avatar {
+    width: 70px;
+    height: 70px;
   }
 }
 
