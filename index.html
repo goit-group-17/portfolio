@@ -22,7 +22,7 @@
     <script type="module" crossorigin src="/project-wr23-45/index.js"></script>
     <link rel="modulepreload" crossorigin href="/project-wr23-45/assets/vendor-JUFBz3ZM.js">
     <link rel="stylesheet" crossorigin href="/project-wr23-45/assets/vendor-B7goKWir.css">
-    <link rel="stylesheet" crossorigin href="/project-wr23-45/assets/index-CJlk87D-.css">
+    <link rel="stylesheet" crossorigin href="/project-wr23-45/assets/index-DAjUlnAN.css">
   </head>
   <body>
 
@@ -508,16 +508,51 @@
   </div>
 </section>
 
-      <section class="work-together">
-  <div class="container">work-together</div>
+      <section class="work-together" id="work-together">
+  <div class="container work-together__container">
+    <div class="work-together__header">
+
+      <h2 class="work-together__title">
+        <img
+          src="../img/work-together/jefferson-desktop.png"
+          alt="Lloyd Jefferson"
+          class="work-together__avatar"
+        /> LET’S <span >WORK</span> TOGETHER
+        </h2>
+    </div>
+
+    <form class="work-together__form" id="contactForm">
+      <div class="work-together__form-fields">
+        <div class="work-together__form-group">
+          <input type="email" placeholder="clients@gmail.com" required />
+        </div>
+        <div class="work-together__form-group">
+          <input type="text" placeholder="comments" required />
+        </div>
+      </div>
+      <button type="submit" class="work-together__send-btn">Send</button>
+    </form>
+
+    <div class="work-together__contacts">
+      <span class="work-together__contact-pill">lloydjefferson@gmail.com</span>
+      <span class="work-together__contact-pill">+380 11 111 11 11</span>
+    </div>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <div class="popup__close" onclick="hidePopup()"></div>
+      <h5>Thank you for your interest in cooperation!</h5>
+      <p>
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. <br />
+        Please stay in touch.
+      </p>
+    </div>
+  </div>
 </section>
 
     </main>
-
-    <footer class="footer">
-  <div class="container">footer</div>
-</footer>
-
 
     <div class="visually-hidden modal-window">modal-window</div>
 
