@@ -39,7 +39,9 @@
 .faq-ac-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
+    cursor: pointer;
+    gap: 10px;
 }
 
 .faq-ac-tittle {
@@ -48,7 +50,9 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.04em;
-    max-width: 260px;
+    flex: 1;
+    margin: 0;
+    max-width: none;
 }
 
 .arrow-icon{
@@ -66,6 +70,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.faq-ac-trigger:focus,
+.faq-ac-trigger:hover {
+    border: 1px solid #FAFAFA80;
 }
 
 .faq-ac-text {
@@ -77,19 +87,19 @@
     margin-top: 26px;
 }
 
-.faq-ac-item.is-open .arrow-icon {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease;
-}
-
-.faq-ac-panel {
-    display: none;
+.faq-ac-panel{
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    visibility: hidden;
 }
 
-.faq-ac-item.is-open .faq-ac-panel {
-    display: block;
+.faq-ac-item.is-active .faq-ac-panel {
+    max-height: 500px;
+    visibility: visible;
+}
+
+.faq-ac-item.is-active .faq-ac-trigger {
+    transform: rotate(180deg);
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -139,7 +149,6 @@
 
     .faq-ac-tittle{
         max-width: 574px;
-        height: 60px;
     }
     
     .faq-ac-wrap {
