@@ -1,4 +1,173 @@
 .about-me {
-
+  margin: 64px 0 32px;
 }
 
+
+.about-me-container {
+  padding: 32px 32px 272px;
+  margin-bottom: 16px;
+}
+
+.about-me-img-container {
+  overflow: hidden;
+}
+
+
+.about-me-ac-item {
+  text-align: left;
+  width: 100%;
+  margin: 32px 0 0 0;
+  cursor: pointer;
+  border-bottom: 1px solid #FAFAFA33;
+}
+
+.about-me-ac-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  min-height: 36px;
+  margin-bottom: 12px;
+}
+
+
+.about-me-ac-arrow {
+  position: relative;
+}
+
+.about-me-ac-arrow .arrow-icon {
+  position: absolute;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+}
+
+.border-gray {
+  border: 1px solid rgba(250, 250, 250, 0.20);
+}
+
+.border-red {
+  border: 1px solid #ED3B44;
+}
+
+.bg-red {
+  background: #ED3B44;
+}
+
+.border-round {
+  border-radius: 100px;
+}
+
+.about-me-image-image {
+  width: 100%;
+  height: auto;
+}
+
+/** Accordion */
+.about-me-ac-item .about-me-ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+  padding: 12px 0 20px;
+}
+
+.about-me-ac-item.js-enabled .about-me-ac-panel,
+.about-me-ac-item.js-enabled .arrow-icon.up {
+  visibility: hidden;
+}
+
+.about-me-ac-item.is-active .about-me-ac-panel,
+.about-me-ac-item.is-active .arrow-icon.up {
+  visibility: visible;
+}
+
+.about-me-ac-item.is-active .arrow-icon.down {
+  visibility: hidden;
+}
+
+/** Swiper */
+.about-me-swiper {
+  margin-top: 32px;
+  display: none;
+  justify-content: space-between;
+}
+
+.about-me-swiper-container {
+  overflow: hidden;
+  min-width: 260px;
+}
+
+.about-me-swiper-container .swiper-slide   {
+  max-width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-swiper-button-next {
+  border: 0;
+  background-color: transparent;
+  stroke: #3B3B3B;
+  fill: none;
+}
+
+.about-me-swiper-button-next .icon {
+  width: 28px;
+  height: 28px;
+}
+
+.about-me-swiper-container .swiper-slide-active  {
+  background: #ED3B44;
+  border: 1px solid #ED3B44;
+}
+
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .about-me-swiper {
+    margin-top: 64px;
+  }
+
+  .about-me-swiper-container .swiper-slide   {
+    max-width: 200px;
+    height: 200px;
+  }
+  .about-me-swiper-container {
+    width: 600px;
+  }
+  .about-me-swiper-button-next .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .about-me-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+  }
+
+  .about-me-ac-panel .ac-text {
+    width: 50%;
+    float: right;
+
+  }
+
+  .about-me-container {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .about-me-swiper-container {
+    width: 1200px;
+  }
+
+  .about-me-swiper-container .swiper-slide   {
+    max-width: 200px;
+    height: 200px;
+  }
+}
