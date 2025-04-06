@@ -38,11 +38,16 @@
   padding: 10px 11px;
   width: 37px;
   height: 37px;
+  cursor: pointer;
   transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+}
+.hero-link:focus-visible {
+  outline: none;
 }
 .socail-links-hero-item:hover {
   border-color: #fafafa;
 }
+
 .main-email {
   display: flex;
   flex-direction: row;
