@@ -1,8 +1,5 @@
 .header {
-  top: 32px;
-  width: 100%;
   z-index: 11;
-  position: absolute;
   right: 0;
 }
 
@@ -11,6 +8,9 @@
 }
 
 .header-container {
+  top: 32px;
+  width: 100%;
+  position: absolute;
   display: flex;
   justify-content: space-between;
 }
@@ -79,7 +79,7 @@
 
 .mobile-menu-nav .nav-item {
   color: #fafafa;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
   margin: 6px 0;
   text-decoration: underline;
   cursor: pointer;
@@ -98,6 +98,11 @@
 }
 
 @media screen and (max-width: 767px) {
+  .header {
+    margin: 0 auto;
+    width: 375px;
+    position: relative;
+  }
   .mobile-menu-button,
   .mobile-menu-close-button {
     display: flex;
@@ -135,6 +140,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    margin: 0 auto;
+    width: 768px;
+    position: relative;
+  }
   .mobile-menu-button {
     display: none;
   }
