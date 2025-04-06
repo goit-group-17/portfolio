@@ -7,6 +7,9 @@ import {
 } from './js/render-reviews.js';
 import initFormHandler from './js/form-handler.js';
 
+import initCovers from './js/covers.js';
+
+initCovers();
 initFormHandler();
 
 (async () => {
