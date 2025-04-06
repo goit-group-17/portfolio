@@ -5,7 +5,9 @@ import {
   renderError,
   renderNotFound,
 } from './js/render-reviews.js';
+import initFormHandler from './js/form-handler.js';
 
+initFormHandler();
 
 (async () => {
   const response = await fetchPortfolio();

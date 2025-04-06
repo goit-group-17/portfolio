@@ -13,27 +13,32 @@
 
 .work-together__header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 
 /* === Avatar — Mobile default (до 768px) === */
 .work-together__avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
+  float: left;
+  margin: 4px 8px 0 0;
 }
 
+
 .work-together__title {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.2;
+  max-width: 280px;
 }
 
-.work-together__title span {
+
+.work-together__title span  {
   color: #f14e4e;
 }
 
@@ -84,7 +89,7 @@
 .work-together__contacts {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 4px;
   font-size: 14px;
 }
 
@@ -182,7 +187,9 @@
   }
 
   .work-together__title {
-    font-size: 32px;
+    font-size: 64px;
+    max-width: 470px;
+    line-height: 78px;
   }
 
   .work-together__contacts {
@@ -198,6 +205,8 @@
   .work-together__avatar {
     width: 70px;
     height: 70px;
+    margin: 8px 20px 0 0;
+
   }
 }
 
@@ -212,7 +221,9 @@
   }
 
   .work-together__title {
-    font-size: 40px;
+    font-size: 64px;
+    max-width: 470px;
+    line-height: 78px;
   }
 
   .work-together__send-btn {
@@ -228,7 +239,3 @@
   }
 }
 
-/* === Приховати footer на всіх пристроях === */
-footer {
-  display: none !important;
-}
