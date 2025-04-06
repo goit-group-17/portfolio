@@ -6,6 +6,9 @@ import {
   renderNotFound,
 } from './js/render-reviews.js';
 
+import initCovers from './js/covers.js';
+
+initCovers();
 
 (async () => {
   const response = await fetchPortfolio();
