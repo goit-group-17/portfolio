@@ -29,9 +29,6 @@
   margin-bottom: 12px;
 }
 
-.about-me-ac-tittle {
-
-}
 
 .about-me-ac-arrow {
   position: relative;
@@ -101,8 +98,8 @@
 }
 
 .about-me-swiper-container .swiper-slide   {
-  min-width: 130px;
-  min-height: 130px;
+  max-width: 130px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +122,7 @@
   border: 1px solid #ED3B44;
 }
 
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .about-me-swiper {
@@ -132,7 +130,7 @@
   }
 
   .about-me-swiper-container .swiper-slide   {
-    width: 200px;
+    max-width: 200px;
     height: 200px;
   }
   .about-me-swiper-container {
@@ -169,7 +167,7 @@
   }
 
   .about-me-swiper-container .swiper-slide   {
-    width: 200px;
+    max-width: 200px;
     height: 200px;
   }
 }
