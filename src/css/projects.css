@@ -129,6 +129,18 @@ border: 1px solid rgba(250, 250, 250, 0.2);
     fill: #fff;
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
+.content-title {
+    display: none;
+}
+
+.content-title.active {
+    display: block;
+}
+button.swiper-button-prev:disabled,
+button.swiper-button-next:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
 
 @media only screen and (min-width: 768px) {
     .container {
