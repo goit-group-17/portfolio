@@ -43,14 +43,14 @@
   margin-bottom: 32px;
 }
 
-.form-fields {
+.work-together__form-fields {
   display: flex;
   flex-direction: column;
   gap: 16px;
   flex: 1;
 }
 
-.form-group {
+.work-together__form-group {
   width: 100%;
 }
 
@@ -68,7 +68,7 @@
   height: 40px;
 }
 
-.send-btn {
+.work-together__send-btn {
   background-color: #f14e4e;
   color: white;
   border: none;
@@ -87,7 +87,7 @@
   font-size: 14px;
 }
 
-.contact-pill {
+.work-together__contact-pill {
   background-color: transparent;
   border: 1px solid #d1d1d1;
   border-radius: 9999px;
@@ -149,17 +149,17 @@
     gap: 24px;
   }
 
-  .form-fields {
+  .work-together__form-fields {
     flex-direction: row;
     gap: 24px;
     align-items: flex-end;
   }
 
-  .form-group {
+  .work-together__form-group {
     width: 100%;
   }
 
-  .send-btn {
+  .work-together__send-btn {
     align-self: center;
     width: 100px;
     height: 100px;
@@ -195,7 +195,7 @@
     font-size: 40px;
   }
 
-  .send-btn {
+  .work-together__send-btn {
     width: 120px;
     height: 120px;
     font-size: 20px;
