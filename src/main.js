@@ -7,6 +7,7 @@ import {
 } from './js/render-reviews.js';
 import initFormHandler from './js/form-handler.js';
 
+import InitAboutMe from './js/about-me';
 import initCovers from './js/covers.js';
 import initFaq from './js/faq.js';
 
@@ -14,6 +15,8 @@ initCovers();
 initFormHandler();
 initFaq();
 
+
+// Init portfolio
 (async () => {
   const response = await fetchPortfolio();
   try {
@@ -24,3 +27,6 @@ initFaq();
     renderNotFound();
   }
 })();
+
+// Init accordions
+InitAboutMe();
