@@ -29,11 +29,11 @@
 }
 
 
-.icon {
+.benefit-icon {
     font-size: 32px;
     margin-bottom: 64px;
 }
-.icon {
+.benefit-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +72,7 @@
 }
 
 
-.order-project-btn {
+.order-project-btn-benefit {
     display: block;
     margin-top: 32px;
     padding: 18px 36px;
@@ -87,11 +87,11 @@
     width: 189px;
 }
 
-.order-project-btn:hover {
+.order-project-btn-benefit:hover {
     background-color: #242527;
  }
 
-.order-project-btn:active {
+.order-project-btn-benefit:active {
     background-color: #242527;
   }
 
@@ -112,7 +112,7 @@
     box-sizing: border-box;
     width: 344px;
     }
-.order-project-btn {
+.order-project-btn-benefit {
     margin-top: 64px;
 }
 }
