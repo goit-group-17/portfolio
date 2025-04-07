@@ -1,5 +1,5 @@
 .about-me {
-  margin: 64px 0 32px;
+  margin-top: 64px;
 }
 
 
@@ -94,7 +94,7 @@
 
 .about-me-swiper-container {
   overflow: hidden;
-  min-width: 260px;
+  width: 260px;
 }
 
 .about-me-swiper-container .swiper-slide   {
@@ -122,11 +122,31 @@
   border: 1px solid #ED3B44;
 }
 
+.about-me-ac-panel .ac-text {
+  margin-bottom: 32px;
+}
+
+.about-me-ac-panel .ac-text:last-child {
+  margin-bottom: 0px;
+}
+
+.about-me-ac-ul li {
+  margin-bottom: 10px;
+}
+
+.about-me-ac-ul li:last-child {
+  margin-bottom: 0;
+}
+
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .about-me-swiper {
     margin-top: 64px;
+  }
+
+  .about-me-container {
+    padding: 64px 64px 436px;
   }
 
   .about-me-swiper-container .swiper-slide   {
@@ -144,6 +164,11 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+
+  .about-me, .about-me-swiper {
+    margin-top: 96px;
+  }
+
   .about-me-container-wrapper {
     display: flex;
     flex-direction: row;
@@ -151,7 +176,7 @@
     justify-content: space-between;
   }
 
-  .about-me-ac-panel .ac-text {
+  .about-me-ac-panel .ac-text.text-wrapper {
     width: 50%;
     float: right;
 
@@ -160,6 +185,7 @@
   .about-me-container {
     width: 50%;
     margin-bottom: 0;
+    padding: 96px 64px 436px
   }
 
   .about-me-swiper-container {
@@ -169,5 +195,9 @@
   .about-me-swiper-container .swiper-slide   {
     max-width: 200px;
     height: 200px;
+  }
+
+  .about-me-ac-item:first-child {
+    margin-top: 96px;
   }
 }
