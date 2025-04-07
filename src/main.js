@@ -8,7 +8,9 @@ import {
 import initFormHandler from './js/form-handler.js';
 
 import initCovers from './js/covers.js';
+import './js/projects.js'; 
 import initFaq from './js/faq.js';
+
 
 initCovers();
 initFormHandler();
