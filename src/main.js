@@ -10,11 +10,15 @@ import initFormHandler from './js/form-handler.js';
 
 import InitAboutMe from './js/about-me';
 import initCovers from './js/covers.js';
+import './js/projects.js';
 import initFaq from './js/faq.js';
+
+import initProjectSwiper from './js/projects.js';
 
 initCovers();
 initFormHandler();
 initFaq();
+initProjectSwiper();
 
 
 // Init portfolio
