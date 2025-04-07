@@ -1,5 +1,5 @@
 .about-me {
-  margin: 64px 0 32px;
+  margin: 64px 0 64px;
 }
 
 
@@ -64,6 +64,22 @@
 }
 
 /** Accordion */
+.about-me-ac-panel .ac-text.one {
+margin-bottom: 32px;
+}
+.ac-text {
+  margin-bottom: 10px;
+}
+.ac-text:last-child {
+  margin-bottom: 0px;
+}
+.about-me-ac-item.role, .about-me-ac-item.education {
+margin-top: 20px;
+}
+.about-me-ac-panel.role .about-me-ac-panel, .about-me-ac-panel.education .about-me-ac-panel {
+  padding: 0;
+}
+
 .about-me-ac-item .about-me-ac-panel {
   overflow: hidden;
   transition-property: height, visibility;
@@ -150,12 +166,31 @@
     gap: 16px;
     justify-content: space-between;
   }
+    .about-me-ac-panel {
+      display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+       
+    }
+  
+    .ac-text.one, .ac-text.two {
+      width: 50%;
+      padding-right: 68px;
+      max-width: 612px;
+    }
+  .about-me-ac-panel.role .ac-text {
+      width: 50%;
+      padding-right: 428px;
+      max-width: 284px;
+    }
+        .about-me-ac-panel.education .ac-list {
+          width: 50%;
+          padding-right: px;
+          max-width: 465px;
+        }
 
-  .about-me-ac-panel .ac-text {
-    width: 50%;
-    float: right;
 
-  }
 
   .about-me-container {
     width: 50%;
