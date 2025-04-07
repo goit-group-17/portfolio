@@ -21,7 +21,7 @@ export function renderGalleryMarkup(reviews) {
 export function updateGallery(gallery, markup) {
   gallery.insertAdjacentHTML('beforeend', markup);
 
-  const swiper = new Swiper('.swiper', {
+  new Swiper('.swiper', {
     slidesPerView: 4,
     spaceBetween: 16,
     navigation: {
