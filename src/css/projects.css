@@ -123,10 +123,10 @@ border: 1px solid rgba(250, 250, 250, 0.2);
     padding: 14px;
     width: 52px;
     height: 52px;
-    fill: #3b3b3b;
+    fill: #fff;
     transition: background-color 0.3s ease, opacity 0.3s ease;
     z-index: 10;
-        
+
 }
 .swiper-btn-next {
     background: #1c1d20;
@@ -174,7 +174,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     justify-content: center;
     gap: 12px;
     margin-top: 32px;
-    
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -193,11 +193,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
     .content-list {
-        
+
         width: 312px;
         height: 55px;
         flex-wrap: nowrap;
-       
+
     }
 
      .content-text {
