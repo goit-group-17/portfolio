@@ -15,6 +15,7 @@ line-height: 150%;
 text-transform: uppercase;
 text-transform: uppercase;
  color: rgba(250, 250, 250, 0.4);
+ margin-top: 96px;
 }
 .content-title {
 border-radius: 24px;
@@ -41,6 +42,7 @@ display: flex;
 flex-wrap: wrap;
 gap: 6px;
 
+
 }
 .content-item {
 height: 45px;
@@ -53,18 +55,7 @@ border: 1px solid rgba(28, 29, 32, 0.2);
  padding: 13px 18px;
 
 }
-.one {
-width: 80px;
-}
-.two {
-width: 57px;
-}
-.three {
-width: 94px;
-}
-.four {
-width: 63px;
-}
+
 .content-text {
 font-weight: 500;
  font-size: 24px;
@@ -93,6 +84,7 @@ text-align: center;
 align-items: center;
 white-space: nowrap;
 margin: 13px;
+border: none;
 }
 .btn-send:hover
 .btn-send:focus {
@@ -131,7 +123,7 @@ border: 1px solid rgba(250, 250, 250, 0.2);
     padding: 14px;
     width: 52px;
     height: 52px;
-    fill: #fff;
+    fill: #3b3b3b;
     transition: background-color 0.3s ease, opacity 0.3s ease;
     z-index: 10;
         
@@ -156,21 +148,27 @@ border: 1px solid rgba(250, 250, 250, 0.2);
 .content-title.active {
     display: block;
 }
-button.swiper-btn-prev:disabled,
-button.swiper-btn-next:disabled {
- opacity: 0.5;
- cursor: not-allowed;
- background-color: transparent;
-border-color: #3b3b3b;
-fill: #3b3b3b;
-
+.swiper-btn-prev,
+.swiper-btn-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
-.swiper-btn-next:not(.disabled),
-.swiper-btn-prev:not(.disabled) {
-border-color: #fff;
-fill: #ffff
+.swiper-btn-next {
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.swiper-btn-prev:disabled,
+.swiper-btn-next:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
 
-  }
 .swiper-buttons-wrapper {
     display: flex;
     justify-content: center;
@@ -198,6 +196,7 @@ fill: #ffff
         
         width: 312px;
         height: 55px;
+        flex-wrap: nowrap;
        
     }
 
