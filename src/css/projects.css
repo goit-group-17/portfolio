@@ -96,7 +96,7 @@
   border: none;
 }
 
-.btn-send:hover
+.btn-send:hover,
 .btn-send:focus {
   background-color: #e0373f;
   outline: none;
@@ -110,7 +110,7 @@
 
 }
 
-.swiper-slide {
+.section-projects .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,9 +126,7 @@
   padding-top: 64px;
 }
 
-.hidden {
-  display: none;
-}
+
 
 .swiper-btn-prev {
   background: #1c1d20;
@@ -155,6 +153,17 @@
   z-index: 10;
 }
 
+.swiper-btn-prev:hover,
+.swiper-btn-prev:focus,
+.swiper-btn-prev:active,
+.swiper-btn-next:hover,
+.swiper-btn-next:focus,
+.swiper-btn-next:active
+{
+  transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+  border-color: #fff;
+
+}
 
 .content-title {
   display: none;

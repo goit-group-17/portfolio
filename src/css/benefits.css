@@ -94,14 +94,17 @@
 }
 
 .order-project-btn-benefit:hover {
+  transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
   background-color: #242527;
 }
 
 .order-project-btn-benefit:focus {
+  transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
   background-color: #242527;
 }
 
 .order-project-btn-benefit:active {
+  transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
   background-color: #242527;
 }
 
