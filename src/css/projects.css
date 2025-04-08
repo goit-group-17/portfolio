@@ -1,5 +1,5 @@
 .section-projects {
-  margin-top: 64px;
+  padding-top: 64px;
 }
 
 .swiper-container-project {
@@ -29,6 +29,7 @@
   height: 812px;
   background: linear-gradient(#fafafa 50%, #242527 50%);
   display: none;
+  padding: 32px 0 32px 32px;
 }
 
 .content-title.active {
@@ -37,11 +38,6 @@
 
 .content-title.hidden {
   display: none;
-}
-
-.content {
-  padding-top: 32px;
-  padding-left: 32px;
 }
 
 .content-list {
@@ -73,9 +69,9 @@
   letter-spacing: -0.03em;
   color: #1c1d20;
   text-align: left;
-  margin-left: 32px;
   margin-top: 96px;
   margin-bottom: 32px;
+  
 }
 
 .btn-send {
@@ -92,7 +88,7 @@
   text-align: center;
   align-items: center;
   white-space: nowrap;
-  margin: 32px 32px;
+  
   border: none;
 }
 
@@ -206,7 +202,7 @@
 
 @media only screen and (min-width: 768px) {
   .section-projects {
-    margin-top: 96px;
+    padding-top: 96px;
   }
 
   .container {
@@ -217,11 +213,11 @@
   .content-title {
     width: 704px;
     height: auto;
+    padding: 64px 0 64px 64px;
   }
 
   .content {
-    padding-top: 64px;
-    padding-left: 64px;
+  
   }
 
   .content-list {
@@ -235,8 +231,8 @@
   .content-text {
     font-size: 44px;
 
-    margin-left: 64px;
-    margin-top: 96px;
+   
+    margin-top: 164px;
     line-height: 100%;
   }
 
@@ -244,7 +240,7 @@
     padding: 18px 50px;
     width: 177px;
     height: 55px;
-    margin: 32px 0 0 64px;
+    
   }
 
   .content-title-image {
@@ -277,7 +273,7 @@
 @media only screen and (min-width: 1440px) {
 
   .section-projects {
-    margin-top: 164px;
+    padding-top: 164px;
   }
 
   .container {
@@ -297,9 +293,7 @@
     justify-content: center;
   }
 
-  .content-text {
-    margin-bottom: 32px;
-  }
+  
 
   .content-title-image {
     display: flex;
