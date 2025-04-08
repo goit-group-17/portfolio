@@ -4,7 +4,7 @@ html {
 
 .header {
   z-index: 11;
-  right: 0;
+  overflow: visible;
 }
 
 .hidden {
@@ -17,6 +17,7 @@ html {
   position: absolute;
   display: flex;
   justify-content: space-between;
+  overflow: visible;
 }
 
 .mobile-menu-container {
@@ -104,8 +105,12 @@ html {
 @media screen and (max-width: 767px) {
   .header {
     margin: 0 auto;
-    width: 375px;
+    width: 100%; /* Змінено */
+    max-width: 375px; /* Додано */
     position: relative;
+  }
+  .header-container {
+    padding: 0 16px; /* Додано */
   }
   .mobile-menu-button,
   .mobile-menu-close-button {
@@ -121,10 +126,13 @@ html {
 
   .mobile-menu-close-button {
     position: absolute;
-    top: 32px;
+    
     right: 32px;
   }
-
+  .mobile-menu {
+    position: absolute; /* Додано */
+    right: 16px; /* Додано */
+  }
   .mobile-menu-icon,
   .mobile-menu-close-icon {
     stroke: #fafafa;
