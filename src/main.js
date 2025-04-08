@@ -1,3 +1,4 @@
+import 'modern-normalize';
 import './js/header.js';
 import { fetchPortfolio } from './js/portfolio-api';
 import {
