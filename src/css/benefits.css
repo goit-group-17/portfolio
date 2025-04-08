@@ -1,6 +1,6 @@
 
 .benefits {
-  margin-top: 64px;
+  padding-top: 64px;
 }
 
 .header-five {
@@ -111,7 +111,7 @@
 @media screen and (min-width: 768px) {
 
   .benefits {
-    margin-top: 96px;
+    padding-top: 96px;
   }
 
   .benefits-list {
@@ -133,7 +133,7 @@
 
 @media screen and (min-width: 1440px) {
   .benefits {
-    margin-top: 164px;
+    padding-top: 164px;
   }
 
   .container.benefits-container {
