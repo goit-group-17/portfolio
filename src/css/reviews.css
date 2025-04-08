@@ -26,6 +26,7 @@
 .section-reviews .reviews-list {
   display: flex;
   margin-bottom: 32px;
+  flex-direction: row;
 }
 
 .section-reviews .reviews-item {
@@ -81,7 +82,9 @@
 }
 
 .section-reviews .swiper-button:not(.swiper-button-disabled):hover {
+  transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
   cursor: pointer;
+  border: 1px solid var(--icon-color-default);
 }
 
 .swiper-slide:last-child {
