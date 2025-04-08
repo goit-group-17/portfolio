@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
 
 
-export default function initProjectSwiper () {
+export default function initProjectSwiper() {
   document.addEventListener('DOMContentLoaded', () => {
 
-     new Swiper('.swiper-container-project', {
+    new Swiper('.swiper-container-project', {
       slidesPerView: 1,
       spaceBetween: 10,
       navigation: {
@@ -51,6 +51,6 @@ export default function initProjectSwiper () {
 
   });
 
-
+}
 
 
