@@ -1,5 +1,5 @@
 import 'modern-normalize';
-import './js/header.js';
+import initHeader from './js/header.js';
 import { fetchPortfolio } from './js/portfolio-api';
 import {
   renderGalleryMarkup,
@@ -15,7 +15,7 @@ import './js/projects.js';
 import initFaq from './js/faq.js';
 
 import initProjectSwiper from './js/projects.js';
-
+initHeader();
 initCovers();
 initFormHandler();
 initFaq();
