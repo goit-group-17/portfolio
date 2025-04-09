@@ -8,7 +8,6 @@
   padding-top: 281px;
 }
 
-
 .social-links-hero {
   margin-top: 212px;
   display: flex;
@@ -22,6 +21,7 @@
 }
 
 .socail-links-hero-item {
+  text-align: center;
   min-width: 37px;
   margin-bottom: 32px;
 }
@@ -29,7 +29,7 @@
 .socail-links-hero-item a {
   display: block;
   border-radius: 60px;
-  border: 1px solid rgba(250, 250, 250, 0.20);
+  border: 1px solid rgba(250, 250, 250, 0.2);
   padding: 10px;
   transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
 }
@@ -44,9 +44,9 @@
   text-overflow: ellipsis;
 }
 
-.socail-links-hero-item:focus,
-.socail-links-hero-item:hover,
-.socail-links-hero-item:active {
+.socail-links-hero-item a:focus,
+.socail-links-hero-item a:hover,
+.socail-links-hero-item a:active {
   border-color: #fafafa;
 }
 
@@ -63,8 +63,8 @@
     padding-top: 300px;
   }
   .socail-links-hero-item {
-    max-width: 53px;
-    max-height: 55px;
+    height: 55px;
+    width: 55px;
   }
 
   .social-links-hero {
@@ -72,8 +72,14 @@
     font-size: 16px;
     gap: 8px;
   }
-
-
+  .socail-links-hero-item:last-child {
+    text-align: center;
+    width: 223px;
+  }
+  .socail-links-hero-item a {
+    min-height: 55px;
+    align-content: center;
+  }
   .header-one {
     margin-bottom: 187px;
   }
