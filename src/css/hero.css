@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(../img/hero/bg-1mob-1x.png);
+  background-image: url(../img/hero/bg-1mob-1x.jpg);
   background-repeat: repeat-y;
   background-attachment: fixed;
 }
@@ -52,14 +52,14 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/hero/bg-1mob-2x.png);
+    background-image: url(../img/hero/bg-1mob-2x.jpg);
     background-size: 82.6%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../img/hero/bg-1tab-1x.png);
+    background-image: url(../img/hero/bg-1tab-1x.jpg);
     padding-top: 300px;
   }
   .socail-links-hero-item {
@@ -86,13 +86,13 @@
 }
 @media (min-resolution: 192dpi) and (min-width: 768px) {
   .hero {
-    background-image: url(../img/hero/bg-1tab-2x.png);
+    background-image: url(../img/hero/bg-1tab-2x.jpg);
     background-size: 75.6%;
   }
 }
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url(../img/hero/bg-1desk-1x.png);
+    background-image: url(../img/hero/bg-1desk-1x.jpg);
   }
   .header-one {
     width: 1084px;
@@ -103,7 +103,7 @@
 }
 @media (min-resolution: 192dpi) and (min-width: 1440px) {
   .hero {
-    background-image: url(../img/hero/bg-1desk-2x.png);
+    background-image: url(../img/hero/bg-1desk-2x.jpg);
     background-size: 50.5%;
   }
 }
