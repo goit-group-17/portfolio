@@ -1,14 +1,17 @@
 .work-together {
-  padding: 40px 20px;
   background-color: #1c1d20;
   color: white;
   font-family: 'Inter Tight', sans-serif;
   position: relative;
+  background-image: url(../img/work-together/elements.png);
+  background-size: contain;
+  background-position: calc(100% + 200px) center;
+  background-repeat: no-repeat;
 }
 
 .work-together__container {
+  padding: 32px 16px;
   width: 100%;
-  margin: 0 auto;
 }
 
 .work-together__header {
@@ -17,6 +20,7 @@
   gap: 16px;
   margin-bottom: 32px;
   overflow: hidden;
+  letter-spacing: -0.03em;
 }
 
 /* === Avatar — Mobile default (до 768px) === */
@@ -50,20 +54,13 @@
 }
 
 .work-together__form-fields {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  flex: 1;
-}
-
-.work-together__form-group {
   width: 100%;
 }
 
 .work-together__form input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #FAFAFA33;
   padding: 10px 4px;
   font-size: 14px;
   color: white;
@@ -72,6 +69,19 @@
   width: 100%;
   box-sizing: border-box;
   height: 40px;
+}
+
+.work-together__form input:focus,
+.work-together__form input:hover{
+  border-color: #FAFAFA80;
+}
+
+.email:not(:placeholder-shown):valid{
+  border-color: #3CBC81;
+}
+
+.email:not(:placeholder-shown):invalid {
+  border-color: #E74A3B;;
 }
 
 .work-together__send-btn {
@@ -86,6 +96,14 @@
   cursor: pointer;
 }
 
+.work-together__send-btn:focus{
+  border-color: white;
+}
+
+.work-together__send-btn:hover{
+  background-color: #E0373F;
+}
+
 .work-together__contacts {
   display: flex;
   flex-wrap: wrap;
@@ -95,11 +113,18 @@
 
 .work-together__contact-pill {
   background-color: transparent;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #FAFAFA33;
   border-radius: 9999px;
-  padding: 6px 12px;
+  padding: 10px 12px;
   font-size: 14px;
   color: #d1d1d1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.work-together__contact-pill:focus,
+.work-together__contact-pill:hover{
+  border-color: #fafafa;
 }
 
 /* === Popup === */
@@ -114,6 +139,12 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+}
+
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popup__content {
@@ -151,38 +182,51 @@
   background-position: center;
   cursor: pointer;
   filter: brightness(0) invert(1);
+  background-color: transparent;
+  border: none;
+}
+
+.popup__close:hover,
+.popup__close:focus{
+  border: 1px solid #FAFAFA33;
+  outline: none;
+}
+
+@media (min-width: 375px) {
+  .work-together{
+  background-position: calc(100% + 210px) center;
+  }
 }
 
 /* === Tablet (≥768px) === */
 @media (min-width: 768px) {
-  .work-together {
-    padding: 60px 40px;
+  .work-together{
+  background-position: calc(100% + 220px) center;
   }
 
   .work-together__container {
+    padding: 80px 32px 169px 32px;
+  }
+
+  .work-together__header{
+    margin-bottom: 18px;
   }
 
   .work-together__form {
     flex-direction: row;
     align-items: flex-start;
-    gap: 24px;
+    gap: 32px;
+    align-items: center;
   }
 
-  .work-together__form-fields {
-    flex-direction: row;
-    gap: 24px;
-    align-items: flex-end;
-  }
-
-  .work-together__form-group {
-    width: 100%;
+  .work-together__form-fields{
+    width: 245px;
   }
 
   .work-together__send-btn {
-    align-self: center;
-    width: 100px;
-    height: 100px;
-    font-size: 18px;
+    width: 150px;
+    height: 150px;
+    font-size: 16px;
   }
 
   .work-together__title {
@@ -192,6 +236,13 @@
   }
 
   .work-together__contacts {
+    font-size: 16px;
+    max-width: 418px;
+    gap: 8px;
+  }
+
+  .work-together__contact-pill{
+    padding: 18px 32px;
     font-size: 16px;
   }
 
@@ -211,12 +262,15 @@
 
 /* === Desktop (≥1024px) === */
 @media (min-width: 1440px) {
-  .work-together__container {
-      max-width: 1046px;
+  .work-together{
+  background-position: right center;
+  }
+  .work-together__container{
+    padding: 80px 180px 169px 180px;
   }
 
   .work-together__header {
-    margin-bottom: 40px;
+    margin-bottom: 18px;
   }
 
   .work-together__title {
@@ -225,10 +279,16 @@
     line-height: 78px;
   }
 
-  .work-together__send-btn {
-    width: 120px;
-    height: 120px;
-    font-size: 20px;
+  .work-together__form-fields{
+    width: 390px;
+  }
+
+  .add-input-style{
+    margin-right: 54px;
+  }
+
+  .work-together__contact-pill{
+
   }
 
   .popup__content {
