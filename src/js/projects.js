@@ -1,10 +1,10 @@
 import Swiper from 'swiper';
 
 
-export default function initProjectSwiper () {
+export default function initProjectSwiper() {
   document.addEventListener('DOMContentLoaded', () => {
 
-     new Swiper('.swiper-container-project', {
+    new Swiper('.swiper-container-project', {
       slidesPerView: 1,
       spaceBetween: 10,
       navigation: {
@@ -49,16 +49,8 @@ export default function initProjectSwiper () {
       }
     }
 
-    const btnSend = document.querySelector('.btn-send');
-    if (btnSend) {
-      btnSend.addEventListener('click', function () {
-        window.open('https://github.com/front-band-17/project-wr23-45', '_blank');
-      });
-    } else {
-      console.error('.btn-send not found!');
-    }
   });
-}
 
+}
 
 
