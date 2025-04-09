@@ -12,7 +12,9 @@
     "glob": "^11.0.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
+    "terser": "^5.39.0",
     "vite": "^6.2.5",
+    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-svgr": "^4.3.0",
     "vite-plugin-unused-files": "^0.1.5"
   },

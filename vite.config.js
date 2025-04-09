@@ -4,6 +4,7 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
 import UnusedFiles from 'vite-plugin-unused-files'
+import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig(({ command }) => {
   return {
@@ -12,6 +13,13 @@ export default defineConfig(({ command }) => {
     },
     root: 'src',
     build: {
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+        },
+      },
       sourcemap: true,
       rollupOptions: {
         input: glob.sync('./src/*.html'),
@@ -39,6 +47,7 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     plugins: [
+      viteCompression(),
       UnusedFiles({
         patterns: ['src/**'],
         failOnUnused: false,
