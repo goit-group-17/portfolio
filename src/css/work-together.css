@@ -120,6 +120,10 @@
   color: #d1d1d1;
   font-size: 14px;
   font-weight: 500;
+  max-width: calc((100% - 4px)/2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .work-together__contact-pill:focus,
@@ -169,7 +173,6 @@ body.modal-popup-open{
 .popup__content h5 {
   font-size: 20px;
   font-weight: 600;
-  /* margin-bottom: 16px; */
 }
 
 .popup__content p {
@@ -202,6 +205,13 @@ body.modal-popup-open{
 @media (min-width: 375px) {
   .work-together{
   background-position: calc(100% + 210px) center;
+  }
+
+  .work-together__contact-pill{
+    max-width: 178px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
   }
 }
 
@@ -249,6 +259,7 @@ body.modal-popup-open{
   }
 
   .work-together__contact-pill{
+    max-width: 239px;
     padding: 18px 32px;
     font-size: 16px;
   }
@@ -302,10 +313,6 @@ body.modal-popup-open{
     margin-right: 54px;
   }
 
-  .work-together__contact-pill{
-
-  }
-
   .popup__content {
     max-width: 600px;
     padding: 64px;
@@ -320,3 +327,8 @@ body.modal-popup-open{
   }
 }
 
+@media (min-resolution: 192dpi){
+  .work-together{
+    background-image: url(../img/work-together/elements2.png);
+  }
+}

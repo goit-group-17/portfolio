@@ -51,11 +51,13 @@ export default function initFormHandler() {
           headers: { 'Accept': 'application/json' },
         });
 
-        if (response.status === 200 || response.status === 201) {
+        if (response.status !== 201) {
+          return;
+        }
           const data = response.data;
 
-          if (popupTitle) popupTitle.textContent = data.title;
-          if (popupMessage) popupMessage.textContent = data.message;
+    if (popupTitle) { popupTitle.textContent = data.title; }
+    if (popupMessage) { popupMessage.textContent = data.message; }
 
           popup.classList.add('active');
           document.body.classList.add('modal-popup-open');
@@ -73,26 +75,27 @@ export default function initFormHandler() {
           document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closePopup();
           });
-        }
       } catch (error) {
-        if (error.response) {
-          switch (error.response.status) {
-            case 400:
-              iziToast.error({ title: 'Error', message: 'Bad Request: Invalid request body.' });
-              break;
-            case 404:
-              iziToast.error({ title: 'Error', message: 'Not Found: Endpoint does not exist.' });
-              break;
-            case 500:
-              iziToast.error({ title: 'Error', message: 'Server Error: Please try again later.' });
-              break;
-            default:
-              iziToast.error({ title: 'Error', message: error.response.statusText });
-              break;
-          }
-        } else {
+        if (!error.response) {
           iziToast.error({ title: 'Error', message: `Network error: ${error.message}` });
+          return;
         }
+        
+        switch (error.response.status) {
+          case 400:
+            iziToast.error({ title: 'Error', message: 'Bad Request: Invalid request body.' });
+            break;
+          case 404:
+            iziToast.error({ title: 'Error', message: 'Not Found: Endpoint does not exist.' });
+            break;
+          case 500:
+            iziToast.error({ title: 'Error', message: 'Server Error: Please try again later.' });
+            break;
+          default:
+            iziToast.error({ title: 'Error', message: error.response.statusText });
+            break;
+        }
+       
       }
     });
   });
