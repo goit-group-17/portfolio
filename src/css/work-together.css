@@ -120,6 +120,10 @@
   color: #d1d1d1;
   font-size: 14px;
   font-weight: 500;
+  max-width: calc((100% - 4px)/2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .work-together__contact-pill:focus,
@@ -128,9 +132,13 @@
 }
 
 /* === Popup === */
+
+body.modal-popup-open{
+  overflow: hidden;
+}
 .popup {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -157,12 +165,14 @@
   color: white;
   position: relative;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .popup__content h5 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 16px;
 }
 
 .popup__content p {
@@ -195,6 +205,13 @@
 @media (min-width: 375px) {
   .work-together{
   background-position: calc(100% + 210px) center;
+  }
+
+  .work-together__contact-pill{
+    max-width: 178px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
   }
 }
 
@@ -242,21 +259,30 @@
   }
 
   .work-together__contact-pill{
+    max-width: 239px;
     padding: 18px 32px;
     font-size: 16px;
   }
 
   .popup__content {
     max-width: 500px;
-    padding: 32px;
+    padding: 64px;
     font-size: 16px;
+  }
+
+  .popup__content p{
+    display: block;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-align: center;
   }
 
   .work-together__avatar {
     width: 70px;
     height: 70px;
     margin: 8px 20px 0 0;
-
   }
 }
 
@@ -287,14 +313,22 @@
     margin-right: 54px;
   }
 
-  .work-together__contact-pill{
-
-  }
-
   .popup__content {
     max-width: 600px;
-    padding: 40px;
+    padding: 64px;
     font-size: 18px;
+  }
+
+  .popup__content p{
+    display: block;
+    padding: 0 50px;
+    letter-spacing: 0.02em;
+    line-height: 24px;
   }
 }
 
+@media (min-resolution: 192dpi){
+  .work-together{
+    background-image: url(../img/work-together/elements2.png);
+  }
+}
