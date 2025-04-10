@@ -6,6 +6,9 @@
 */
 /* Common styles */
 @import url('./reset.css');
+@import url('modern-normalize/modern-normalize.css');
+@import url('./fonts.css');
+
 @import url('./typography.css');
 
 @import url('./base.css');
@@ -23,4 +26,3 @@
 @import url('./reviews.css');
 @import url('./work-together.css');
 @import url('./modal-window.css');
-@import url('./footer.css');

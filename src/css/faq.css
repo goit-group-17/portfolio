@@ -39,7 +39,9 @@
 .faq-ac-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
+    cursor: pointer;
+    gap: 10px;
 }
 
 .faq-ac-tittle {
@@ -48,12 +50,14 @@
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.04em;
-    max-width: 260px;
+    flex: 1;
+    margin: 0;
+    max-width: none;
 }
 
 .arrow-icon{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 5px;
 }
 
 .faq-ac-trigger {
@@ -66,6 +70,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.faq-ac-trigger:active,
+.faq-ac-trigger:focus,
+.faq-ac-trigger:hover {
+  transition: border-color 0.2s cubic-bezier(0.34, 0.78, 0.68, 0.41);
+    border: 1px solid #FAFAFA80;
 }
 
 .faq-ac-text {
@@ -77,19 +89,19 @@
     margin-top: 26px;
 }
 
-.faq-ac-item.is-open .arrow-icon {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease;
-}
-
-.faq-ac-panel {
-    display: none;
+.faq-ac-panel{
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    visibility: hidden;
 }
 
-.faq-ac-item.is-open .faq-ac-panel {
-    display: block;
+.faq-ac-item.is-active .faq-ac-panel {
+    max-height: 500px;
+    visibility: visible;
+}
+
+.faq-ac-item.is-active .faq-ac-trigger {
+    transform: rotate(180deg);
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -129,7 +141,7 @@
     .section-faq{
         padding: 164px 0;
     }
-    
+
     .faq-ac-item{
         width: 688px;
         border: 0.5px solid #FAFAFA33;
@@ -139,39 +151,38 @@
 
     .faq-ac-tittle{
         max-width: 574px;
-        height: 60px;
     }
-    
+
     .faq-ac-wrap {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .faq-ac-item:nth-child(1) {
         grid-column: 1;
         grid-row: 1;
     }
-    
+
     .faq-ac-item:nth-child(2) {
         grid-column: 1;
         grid-row: 2;
     }
-    
+
     .faq-ac-item:nth-child(3) {
         grid-column: 1;
         grid-row: 3;
     }
-    
+
     .faq-ac-item:nth-child(4) {
         grid-column: 2;
         grid-row: 1;
     }
-    
+
     .faq-ac-item:nth-child(5) {
         grid-column: 2;
         grid-row: 2;
     }
-    
+
     .faq-ac-item:nth-child(6) {
         grid-column: 2;
         grid-row: 3;
