@@ -6,7 +6,7 @@ body {
 }
 
 .work-together {
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
   position: relative;
   background-image: url(../img/work-together/elements.png);
   background-size: contain;
@@ -24,7 +24,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   overflow: hidden;
   letter-spacing: -0.03em;
 }
@@ -38,7 +38,6 @@ body {
   margin: 4px 8px 0 0;
 }
 
-
 .work-together__title {
   font-size: 40px;
   font-weight: 600;
@@ -47,8 +46,7 @@ body {
   max-width: 280px;
 }
 
-
-.work-together__title span  {
+.work-together__title span {
   color: #f14e4e;
 }
 
@@ -56,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .work-together__form-fields {
@@ -73,7 +71,7 @@ body {
 .work-together__form input {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #FAFAFA33;
+  border-bottom: 1px solid #fafafa33;
   padding: 10px 4px;
   font-size: 14px;
   color: white;
@@ -85,16 +83,16 @@ body {
 }
 
 .work-together__form input:focus,
-.work-together__form input:hover{
-  border-color: #FAFAFA80;
+.work-together__form input:hover {
+  border-color: #fafafa80;
 }
 
-.email:not(:placeholder-shown):valid{
-  border-color: #3CBC81;
+.email:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
 }
 
 .email:not(:placeholder-shown):invalid {
-  border-color: #E74A3B;;
+  border-color: #e74a3b;
 }
 
 .work-together__send-btn {
@@ -109,12 +107,12 @@ body {
   cursor: pointer;
 }
 
-.work-together__send-btn:focus{
+.work-together__send-btn:focus {
   border-color: white;
 }
 
-.work-together__send-btn:hover{
-  background-color: #E0373F;
+.work-together__send-btn:hover {
+  background-color: #e0373f;
 }
 
 .work-together__contacts {
@@ -122,32 +120,33 @@ body {
   flex-wrap: wrap;
   gap: 4px;
   font-size: 14px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .work-together__contact-pill {
   background-color: transparent;
-  border: 1px solid #FAFAFA33;
+  border: 1px solid #fafafa33;
   border-radius: 9999px;
   padding: 10px 12px;
   font-size: 14px;
   color: #d1d1d1;
   font-size: 14px;
   font-weight: 500;
-  max-width: calc((100% - 4px)/2);
+  max-width: calc((100% - 4px) / 2);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .work-together__contact-pill:focus,
-.work-together__contact-pill:hover{
+.work-together__contact-pill:hover {
   border-color: #fafafa;
 }
 
 /* === Popup === */
 
-body.modal-popup-open{
+body.modal-popup-open {
   overflow: hidden;
 }
 .popup {
@@ -214,17 +213,17 @@ body.modal-popup-open{
 }
 
 .popup__close:hover,
-.popup__close:focus{
-  border: 1px solid #FAFAFA33;
+.popup__close:focus {
+  border: 1px solid #fafafa33;
   outline: none;
 }
 
 @media (min-width: 375px) {
-  .work-together{
-  background-position: calc(100% + 210px) center;
+  .work-together {
+    background-position: calc(100% + 210px) center;
   }
 
-  .work-together__contact-pill{
+  .work-together__contact-pill {
     max-width: 178px;
     white-space: normal;
     overflow: visible;
@@ -234,15 +233,15 @@ body.modal-popup-open{
 
 /* === Tablet (≥768px) === */
 @media (min-width: 768px) {
-  .work-together{
-  background-position: calc(100% + 220px) center;
+  .work-together {
+    background-position: calc(100% + 220px) center;
   }
 
   .work-together__container {
-    padding: 80px 32px 169px 32px;
+    padding: 80px 32px 196px 32px;
   }
 
-  .work-together__header{
+  .work-together__header {
     margin-bottom: 18px;
   }
 
@@ -253,7 +252,7 @@ body.modal-popup-open{
     align-items: center;
   }
 
-  .work-together__form-fields{
+  .work-together__form-fields {
     width: 245px;
   }
 
@@ -275,7 +274,7 @@ body.modal-popup-open{
     gap: 8px;
   }
 
-  .work-together__contact-pill{
+  .work-together__contact-pill {
     max-width: 239px;
     padding: 18px 32px;
     font-size: 16px;
@@ -287,7 +286,7 @@ body.modal-popup-open{
     font-size: 16px;
   }
 
-  .popup__content p{
+  .popup__content p {
     display: block;
     padding: 0 10px;
     font-size: 16px;
@@ -300,20 +299,20 @@ body.modal-popup-open{
     width: 70px;
     height: 70px;
     margin: 8px 20px 0 0;
-
   }
 }
 
 /* === Desktop (≥1440px) === */
 @media (min-width: 1440px) {
-  .work-together{
-  background-position: right center;
+  .work-together {
+    background-position: right center;
   }
   .work-together__container {
-    padding: 80px 180px 169px 180px;
+    padding: 80px 180px 196px 180px;
   }
-    .work-together__container {
-    max-width: 1046px;
+  .work-together__container {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .work-together__header {
@@ -326,11 +325,11 @@ body.modal-popup-open{
     line-height: 78px;
   }
 
-  .work-together__form-fields{
+  .work-together__form-fields {
     width: 390px;
   }
 
-  .add-input-style{
+  .add-input-style {
     margin-right: 54px;
   }
 
@@ -340,7 +339,7 @@ body.modal-popup-open{
     font-size: 18px;
   }
 
-  .popup__content p{
+  .popup__content p {
     display: block;
     padding: 0 50px;
     letter-spacing: 0.02em;
@@ -348,8 +347,8 @@ body.modal-popup-open{
   }
 }
 
-@media (min-resolution: 192dpi){
-  .work-together{
+@media (min-resolution: 192dpi) {
+  .work-together {
     background-image: url(../img/work-together/elements2.png);
   }
 }
