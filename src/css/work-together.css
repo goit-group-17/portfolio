@@ -1,7 +1,12 @@
-.work-together {
+body {
+  margin: 0;
+  font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
   color: white;
-  font-family: 'Inter Tight', sans-serif;
+}
+
+.work-together {
+  padding: 40px 20px;
   position: relative;
   background-image: url(../img/work-together/elements.png);
   background-size: contain;
@@ -12,13 +17,14 @@
 .work-together__container {
   padding: 32px 16px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .work-together__header {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   overflow: hidden;
   letter-spacing: -0.03em;
 }
@@ -49,11 +55,18 @@
 .work-together__form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 18px;
+  margin-bottom: 20px;
 }
 
 .work-together__form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+}
+
+.work-together__form-group {
   width: 100%;
 }
 
@@ -89,9 +102,9 @@
   color: white;
   border: none;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  font-size: 16px;
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
   align-self: flex-start;
   cursor: pointer;
 }
@@ -109,6 +122,7 @@
   flex-wrap: wrap;
   gap: 4px;
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .work-together__contact-pill {
@@ -138,7 +152,7 @@ body.modal-popup-open{
 }
 .popup {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -157,11 +171,12 @@ body.modal-popup-open{
 
 .popup__content {
   background: #1c1c1e;
-  padding: 24px;
+  padding: 24px 40px;
   border-radius: 12px;
   text-align: center;
-  max-width: 320px;
+  max-width: 492px;
   width: 90%;
+  height: auto;
   color: white;
   position: relative;
   line-height: 1.6;
@@ -173,6 +188,7 @@ body.modal-popup-open{
 .popup__content h5 {
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .popup__content p {
@@ -188,7 +204,8 @@ body.modal-popup-open{
   width: 24px;
   height: 24px;
   background-image: url('../img/hero/cross.SVG.svg');
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
   cursor: pointer;
   filter: brightness(0) invert(1);
@@ -283,16 +300,20 @@ body.modal-popup-open{
     width: 70px;
     height: 70px;
     margin: 8px 20px 0 0;
+
   }
 }
 
-/* === Desktop (≥1024px) === */
+/* === Desktop (≥1440px) === */
 @media (min-width: 1440px) {
   .work-together{
   background-position: right center;
   }
-  .work-together__container{
+  .work-together__container {
     padding: 80px 180px 169px 180px;
+  }
+    .work-together__container {
+    max-width: 1046px;
   }
 
   .work-together__header {
