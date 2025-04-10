@@ -65,7 +65,7 @@ body {
   background: transparent;
   border: none;
   border-bottom: 1px solid #d1d1d1;
-  padding: 6px 4px 14px; /* змінено для центрування */
+  padding: 6px 4px 14px;
   font-size: 14px;
   color: white;
   outline: none;
@@ -150,10 +150,12 @@ body {
   width: 24px;
   height: 24px;
   background-image: url('../img/hero/cross.SVG.svg');
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
   cursor: pointer;
   filter: brightness(0) invert(1);
+  display: block;
 }
 
 /* === Tablet (≥768px) === */
@@ -164,7 +166,7 @@ body {
 
   .work-together__form {
     flex-direction: row;
-    align-items: center; /* зміна для центрування з кнопкою */
+    align-items: center;
     gap: 24px;
   }
 
