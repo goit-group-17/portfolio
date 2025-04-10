@@ -3,6 +3,7 @@ import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
+import UnusedFiles from 'vite-plugin-unused-files'
 
 export default defineConfig(({ command }) => {
   return {
@@ -38,6 +39,10 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     plugins: [
+      UnusedFiles({
+        patterns: ['src/**'],
+        failOnUnused: false,
+      }),
       injectHTML(),
       FullReload(['./src/**/**.html']),
       SortCss({
