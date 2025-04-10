@@ -61,6 +61,10 @@
   margin-top: 32px;
 }
 
+.section-projects {
+  display: none;
+}
+
 .swiper-projects .swiper-slide {
   margin: 0!important;
 }
