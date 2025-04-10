@@ -15,7 +15,7 @@ import './js/projects.js';
 import initFaq from './js/faq.js';
 
 import initProjectSwiper from './js/projects.js';
-//initHeader();
+initHeader();
 initCovers();
 initFormHandler();
 initFaq();

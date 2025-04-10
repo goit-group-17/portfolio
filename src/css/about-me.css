@@ -1,5 +1,5 @@
 .about-me {
-  margin-top: 64px;
+  padding-top: 64px;
 }
 
 
@@ -70,8 +70,6 @@
   width: 100%;
   height: auto;
 }
-
-
 
 /** Accordion */
 .about-me-ac-item .about-me-ac-panel {
@@ -175,7 +173,11 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
 
-  .about-me, .about-me-swiper {
+  .about-me {
+    padding-top: 96px;
+  }
+
+  .about-me-swiper {
     margin-top: 96px;
   }
 

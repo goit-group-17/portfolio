@@ -11,19 +11,21 @@ html {
   display: none;
 }
 
-.header-container {
+.header-wrapper {
   top: 32px;
   width: 100%;
   position: absolute;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .mobile-menu-container {
-  background-image: url(../img/Hero.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /*background-image: url(../img/Hero.png) ;*/
+  background-image: url(../img/hero.png) ;
+  /*background-size: cover;*/
+  background-size: auto 8px;
+  background-repeat: repeat-y;
   position: fixed;
   top: 0;
   right: -100%;
@@ -62,8 +64,7 @@ html {
   justify-content: center;
   align-items: center;
   border-radius: 60px;
-  width: 163px;
-  height: 55px;
+  padding: 14px 31px;
   background-color: #ED3B44;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -84,12 +85,16 @@ html {
 .mobile-menu-nav .nav-item {
   color: #fafafa;
   text-underline-offset: 4px;
-  margin: 6px 0;
+  margin-top: 12px;
   text-decoration: underline;
   cursor: pointer;
   align-items: center;
   transition: color 250ms ease;
   letter-spacing: -0.02em;
+}
+
+.mobile-menu-nav .nav-item:first-child {
+  margin-top: 0;
 }
 
 .nav-item:hover,
@@ -101,12 +106,13 @@ html {
   overflow: hidden;
 }
 
+.header-container {
+
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
-  .header {
-    margin: 0 auto;
-    width: 375px;
-    position: relative;
-  }
+
   .mobile-menu-button,
   .mobile-menu-close-button {
     display: flex;
@@ -144,11 +150,7 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    margin: 0 auto;
-    width: 768px;
-    position: relative;
-  }
+
   .mobile-menu-button {
     display: none;
   }
@@ -214,12 +216,9 @@ html {
   }
 
   .order-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline;
     border-radius: 60px;
-    width: 163px;
-    height: 55px;
+    padding: 18px 24px;
     background-color: #ed3b44;
     font-weight: 500;
     font-size: 16px;
