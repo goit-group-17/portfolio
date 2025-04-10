@@ -1,8 +1,12 @@
-.work-together {
-  padding: 40px 20px;
+body {
+  margin: 0;
+  font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
   color: white;
-  font-family: 'Inter Tight', sans-serif;
+}
+
+.work-together {
+  padding: 40px 20px;
   position: relative;
 }
 
@@ -15,11 +19,10 @@
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   overflow: hidden;
 }
 
-/* === Avatar — Mobile default (до 768px) === */
 .work-together__avatar {
   width: 40px;
   height: 40px;
@@ -27,7 +30,6 @@
   float: left;
   margin: 4px 8px 0 0;
 }
-
 
 .work-together__title {
   font-size: 40px;
@@ -37,22 +39,21 @@
   max-width: 280px;
 }
 
-
-.work-together__title span  {
+.work-together__title span {
   color: #f14e4e;
 }
 
 .work-together__form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 18px;
+  margin-bottom: 20px;
 }
 
 .work-together__form-fields {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   flex: 1;
 }
 
@@ -64,7 +65,7 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid #d1d1d1;
-  padding: 10px 4px;
+  padding: 6px 4px 14px; /* змінено для центрування */
   font-size: 14px;
   color: white;
   outline: none;
@@ -79,9 +80,9 @@
   color: white;
   border: none;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  font-size: 16px;
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
   align-self: flex-start;
   cursor: pointer;
 }
@@ -91,6 +92,7 @@
   flex-wrap: wrap;
   gap: 4px;
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .work-together__contact-pill {
@@ -118,11 +120,12 @@
 
 .popup__content {
   background: #1c1c1e;
-  padding: 24px;
+  padding: 24px 40px;
   border-radius: 12px;
   text-align: center;
-  max-width: 320px;
+  max-width: 492px;
   width: 90%;
+  height: auto;
   color: white;
   position: relative;
   line-height: 1.6;
@@ -159,30 +162,16 @@
     padding: 60px 40px;
   }
 
-  .work-together__container {
-  }
-
   .work-together__form {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center; /* зміна для центрування з кнопкою */
     gap: 24px;
   }
 
   .work-together__form-fields {
     flex-direction: row;
     gap: 24px;
-    align-items: flex-end;
-  }
-
-  .work-together__form-group {
-    width: 100%;
-  }
-
-  .work-together__send-btn {
-    align-self: center;
-    width: 100px;
-    height: 100px;
-    font-size: 18px;
+    align-items: flex-start;
   }
 
   .work-together__title {
@@ -191,8 +180,15 @@
     line-height: 78px;
   }
 
-  .work-together__contacts {
-    font-size: 16px;
+  .work-together__avatar {
+    width: 70px;
+    height: 70px;
+    margin: 8px 20px 0 0;
+  }
+
+  .work-together__send-btn {
+    width: 150px;
+    height: 150px;
   }
 
   .popup__content {
@@ -200,35 +196,12 @@
     padding: 32px;
     font-size: 16px;
   }
-
-  .work-together__avatar {
-    width: 70px;
-    height: 70px;
-    margin: 8px 20px 0 0;
-
-  }
 }
 
-/* === Desktop (≥1024px) === */
+/* === Desktop (≥1440px) === */
 @media (min-width: 1440px) {
   .work-together__container {
-      max-width: 1046px;
-  }
-
-  .work-together__header {
-    margin-bottom: 40px;
-  }
-
-  .work-together__title {
-    font-size: 64px;
-    max-width: 470px;
-    line-height: 78px;
-  }
-
-  .work-together__send-btn {
-    width: 120px;
-    height: 120px;
-    font-size: 20px;
+    max-width: 1046px;
   }
 
   .popup__content {
@@ -237,4 +210,3 @@
     font-size: 18px;
   }
 }
-
