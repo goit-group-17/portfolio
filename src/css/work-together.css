@@ -309,9 +309,10 @@ body.modal-popup-open{
   .work-together{
   background-position: right center;
   }
-  .work-together__container{
-    padding: 80px 180px 169px 180px;
   .work-together__container {
+    padding: 80px 180px 169px 180px;
+  }
+    .work-together__container {
     max-width: 1046px;
   }
 
