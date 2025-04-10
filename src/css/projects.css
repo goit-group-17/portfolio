@@ -61,6 +61,10 @@
   margin-top: 32px;
 }
 
+.section-projects {
+  display: none;
+}
+
 .swiper-projects .swiper-slide {
   margin: 0!important;
 }
@@ -129,6 +133,9 @@
   .section-projects {
     padding-top: 96px;
   }
+    .project-tag .tag-item {
+      padding: 18px;
+    }
 
   .project-text {
     padding: 64px 64px;
@@ -142,7 +149,9 @@
     letter-spacing: -1.32px;
     max-width: 494px;
   }
-
+.project-button {
+  padding: 18px 50px;
+}
   .project-image {
     padding: 120px  45px 120px 45px;
   }
@@ -153,8 +162,26 @@
     height: 68px;
   }
 
+.project-wrapper-swiper-button {
+    margin-top: 64px;
+    gap: 20px;
+  }
 
+  .project-wrapper .project-text {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 24px;
+  }
+
+  .project-wrapper .project-image {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 24px;
+  }
 }
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
 
@@ -181,7 +208,8 @@
   }
 
   .project-image {
-    padding: 64px;
+    padding: 120px
+    37px;
   }
 
 }
