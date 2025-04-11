@@ -28,6 +28,18 @@ export default function initHeader() {
     }
   });
 
+  navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      doCloseMenu();
+      const targetId = link.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
   mobileMenuButton.addEventListener('click', doOpenMenu);
   mobileMenuCloseButton.addEventListener('click', doCloseMenu);
 
@@ -57,19 +69,6 @@ export default function initHeader() {
     document.body.classList.remove('modal-body-lock');
   }
 
-  document.querySelector('nav').addEventListener('click', event => {
-    const link = event.target.closest('a[href^="#"]');
-    if (!link) return;
-
-    event.preventDefault(); // чтобы не прыгало по ссылке
-    doCloseMenu();
-
-    const targetId = link.getAttribute('href');
-    const targetSection = document.querySelector(targetId);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
 
   orderButtonMobile.addEventListener('click', event => {
     doCloseMenu();
