@@ -6,7 +6,6 @@ body {
 }
 
 .work-together {
- 
   position: relative;
   background-image: url(../img/work-together/elements.png);
   background-size: contain;
@@ -54,7 +53,7 @@ body {
 .work-together__form {
   display: flex;
   flex-direction: column;
- 
+
   margin-bottom: 64px;
 }
 
@@ -65,7 +64,6 @@ body {
   flex: 1;
   margin-bottom: 16px;
   justify-content: flex-start;
-
 }
 .work-together__form-fields.add-input-style {
   margin-bottom: 0;
@@ -81,7 +79,7 @@ body {
   background: transparent;
   border: none;
   border-bottom: 1px solid #fafafa33;
- padding-bottom: 20px;
+  padding-bottom: 20px;
   font-size: 14px;
   color: white;
   outline: none;
@@ -129,7 +127,6 @@ body {
   flex-wrap: wrap;
   gap: 4px;
   font-size: 14px;
-
 }
 
 .work-together__contact-pill {
@@ -145,7 +142,6 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
- 
 }
 
 .work-together__contact-pill:focus,
@@ -160,14 +156,14 @@ body.modal-popup-open {
 }
 .popup {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 100%;
   min-height: 276px;
-
+  height: 100%;
   background: rgba(0, 0, 0, 0.6);
- 
+
   transform: translate(-50%, -50%);
 }
 
@@ -175,7 +171,6 @@ body.modal-popup-open {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .popup__content {
@@ -192,7 +187,6 @@ body.modal-popup-open {
   display: flex;
   flex-direction: column;
   gap: 16px;
-    
 }
 
 .popup__content h5 {
@@ -248,13 +242,13 @@ body.modal-popup-open {
     background-position: calc(100% + 220px) center;
   }
 
-    .work-together__container {
-      padding: 80px 32px 169px 32px;
+  .work-together__container {
+    padding: 80px 32px 169px 32px;
   }
 
-    .work-together__title {
-      margin-bottom: 18px;
-    }
+  .work-together__title {
+    margin-bottom: 18px;
+  }
 
   .work-together__form {
     flex-direction: row;
@@ -330,7 +324,6 @@ body.modal-popup-open {
     margin: 0 auto;
   }
 
- 
   .work-together__title {
     font-size: 64px;
     max-width: 470px;
@@ -340,9 +333,10 @@ body.modal-popup-open {
   .work-together__form-fields {
     width: 390px;
   }
-     .work-together__form {            
-       width: 1200px;
-          justify-content: space-between;}
+  .work-together__form {
+    width: 1200px;
+    justify-content: space-between;
+  }
   .add-input-style {
     margin-right: 54px;
   }
