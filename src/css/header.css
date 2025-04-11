@@ -123,6 +123,10 @@ html {
     width: 28px;
   }
 
+  :root {
+    overflow: scroll;
+  }
+
   .mobile-menu-close-button {
     position: absolute;
     top: 32px;
