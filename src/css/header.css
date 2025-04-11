@@ -21,10 +21,8 @@ html {
 }
 
 .mobile-menu-container {
-  /*background-image: url(../img/Hero.png) ;*/
   background-image: url(../img/hero.png) ;
-  /*background-size: cover;*/
-  background-size: auto 8px;
+  background-size: auto 12px;
   background-repeat: repeat-y;
   position: fixed;
   top: 0;
