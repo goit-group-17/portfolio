@@ -41,7 +41,6 @@ export default function initHeader() {
     if (window.innerWidth >= 768) {
       doCloseMenu();
     }
-
   });
 
   function removeModalLock() {
