@@ -33,24 +33,43 @@ export default function initHeader() {
 
   function doOpenMenu() {
     mobileMenuContainer.classList.add('show');
+    removeModalLock();
     document.body.classList.add('modal-body-lock');
   }
 
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      doCloseMenu();
+    }
+
+  });
+
+  function removeModalLock() {
+    if (document.body.classList.contains('modal-body-lock')) {
+      document.body.classList.remove('modal-body-lock');
+    }
+  }
+
+
+
   function doCloseMenu() {
+
     mobileMenuContainer.classList.remove('show');
     document.body.classList.remove('modal-body-lock');
   }
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', event => {
-      doCloseMenu();
-      const targetId = link.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
+  document.querySelector('nav').addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link) return;
 
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
+    event.preventDefault(); // чтобы не прыгало по ссылке
+    doCloseMenu();
+
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
   });
 
   orderButtonMobile.addEventListener('click', event => {
