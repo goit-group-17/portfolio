@@ -61,7 +61,6 @@
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(../img/hero/bg-1tab-1x.png);
-    padding-top: 300px;
   }
   .socail-links-hero-item {
     height: 55px;
